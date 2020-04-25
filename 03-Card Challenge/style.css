@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Josefin Sans', sans-serif;
+}
+.container{
+    display: flex;
+    width: 100%;
+    height: 600px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    background: linear-gradient(135deg, hsl(0, 0%, 100%),hsl(0, 74%, 69%));
+    
+}
+.left{
+    padding: 0 120px;
+    background: url(images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+}
+.left__logo{
+    margin-top: 50px;
+}
+
+.left__img__mobile{
+    display: none;
+}
+
+.left__title{
+    padding-top: 90px;
+    font-size: 60px ;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 20px;
+    color:hsl(0, 36%, 70%) ;
+}
+.span{
+    font-weight: 600;
+    color: black;
+}
+.left__text{
+    padding-top: 15px;
+    color:hsl(0, 36%, 70%);
+    line-height: 30px;
+}
+.left__form{
+    position: relative;
+    margin-top: 25px;
+    outline: none;
+    
+}
+.left__input{
+    width: 400px;
+    height: 35px;
+    border: 1px solid hsl(0, 36%, 70%);
+    border-radius: 10px;
+    padding-left: 15px;
+    outline: none;   
+    position: absolute;    
+}
+.left__inpu::placeholder{
+    color: hsl(0, 36%, 70%);
+    font-weight: 600;
+}
+.left__button{
+    position: relative;
+    top: -2px;
+    right: -350px;
+    width: 70px;
+    height: 40px;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0 5px 20px 1px hsl(0, 80%, 86%);
+    cursor: pointer;
+    
+}
+.left__button:hover{
+    box-shadow: 0 5px 20px 2px hsl(0, 93%, 68%);
+    height: 40px;
+    width: 70px;
+}
+.right{
+    height: 100%;
+}
+.right__img{
+    height: 100%;
+    margin-right: 0;
+}
+
+@media screen and (max-width:480px){
+    .right__img{
+        display: none;    
+    }  
+    .left__img__mobile{
+        display: block ; 
+        width: 100%;      
+    }
+    .container{
+        background: none;
+        margin:  0;
+        padding: 0;
+        height: 90vh;
+    }
+    .left {
+        background: none;
+        margin: 0;
+        padding: 0;
+    }
+     .left__logo{
+        margin: 40px;
+     }
+     .left__title{
+        padding: 1em;
+        text-align: center;
+        font-size: 3rem ;
+    }
+    .left__text{
+        text-align: center;
+        padding: 15px;
+    }
+    .left__form{
+        padding: 15px;
+    }
+    .left__button{
+        position: absolute;
+        top: 12px;
+        right: 5px;
+    }
+
+}

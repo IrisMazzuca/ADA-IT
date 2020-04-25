@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Registro</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="formcard">
+        <div class="card__image card__image--register">
+          <img
+            class="image image--register"
+            src="images/registro.png"
+            alt="registro"
+          />
+        </div>
+
+        <div class="main">
+          <h1 class="main__title">Hola!</h1>
+          <p class="main__subtitle">Comencemos el viaje</p>
+          <form class="form" action="">
+            <label class="form__label" for="username">Username</label>
+            <input
+              class="form__input"
+              type="text"
+              id="username"
+              placeholder="Ingresa tu nombre de usuario"
+            />
+            <label class="form__label" for="email">Email</label>
+            <input
+              class="form__input"
+              type="email"
+              id="email"
+              placeholder="ejemplo@dominio.com"
+            />
+            <label class="form__label" for="password">Contraseña</label>
+            <input
+              class="form__input"
+              type="password"
+              id="password"
+              placeholder="Ingresa tu contraseña"
+            />
+            <label class="form__label" for="confirm-password"
+              >Confirmar Contraseña</label
+            >
+            <input
+              class="form__input"
+              type="password"
+              id="confirm-password"
+              placeholder="Confirma tu contraseña"
+            />
+            <div class="form__checkbox">
+              <input
+                class="form__checkbox_input"
+                type="checkbox"
+                name=""
+                id="checkbox"
+              />
+              <label class="form__checkbox__label" for="checkbox"
+                >Estoy de acuerdo con los
+                <a class="hiper" href="">términos y condiciones</a></label
+              >
+            </div>
+            <input
+              class="form__submit"
+              type="submit"
+              value="Registrarme"
+              id="submit"
+            />
+          </form>
+
+          <p class="main__account">
+            Tienes una cuenta?
+            <a class="hiper" href="login.html" target="_blank">Ingresá!</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+.card__image {
+  width: 45%;
+  padding: $sp6 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &--register {
+    background-color: $backgroun-color-img-index;
+    border-top-left-radius: $sp0;
+    border-bottom-left-radius: $sp0;
+  }
+
+  &--login {
+    background-color: $backgroun-color-img-login;
+    border-top-right-radius: $sp0;
+    border-bottom-right-radius: $sp0;
+  }
+
+  .image {
+    width: 90%;
+
+    &--register {
+      background-color: $backgroun-color-img-index;
+    }
+
+    &--login {
+      background-color: $backgroun-color-img-login;
+    }
+  }
+}

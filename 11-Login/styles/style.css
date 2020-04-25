@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.card__image {
+  width: 45%;
+  padding: 6rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card__image--register {
+  background-color: #ebd0d3;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+.card__image--login {
+  background-color: #00d1b2;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.card__image .image {
+  width: 90%;
+}
+.card__image .image--register {
+  background-color: #ebd0d3;
+}
+.card__image .image--login {
+  background-color: #00d1b2;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.form__label {
+  padding: 0.5rem 0;
+  font-weight: 600;
+}
+.form__input {
+  display: block;
+  width: 110%;
+  padding: 0.5rem 6rem 0.5rem 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #dbdbdb;
+  outline: none;
+}
+.form__input::placeholder {
+  color: #dbdbdb;
+}
+.form__input:hover {
+  border: 1px solid #b5b5b5;
+}
+.form__input:focus {
+  border: 1px solid #3273dc;
+}
+.form__input:invalid {
+  color: #ff0000;
+  border: 1px solid #ff0000;
+}
+.form__checkbox {
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+}
+.form__submit {
+  margin-top: 0.5rem;
+  width: 40%;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  border: none;
+  background-color: #00d1b2;
+  color: #fff;
+}
+.form__submit:hover {
+  cursor: pointer;
+  background-color: #00c4a7;
+}
+.form__submit:active {
+  background-color: #00b89c;
+}
+
+.main {
+  width: 55%;
+  padding: 2rem 1rem 0 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #fff;
+}
+.main__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.main__subtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+.main__account {
+  padding: 1rem 0;
+}
+
+.hiper {
+  text-decoration: none;
+  color: #3273dc;
+}
+.hiper:hover {
+  color: #363636;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+.formcard {
+  width: 60%;
+  max-width: 1200px;
+  display: flex;
+  box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.56);
+  border-radius: 2.5rem;
+  overflow: hidden;
+}
+
+body {
+  font-family: "Roboto";
+  font-size: 0.8rem;
+}
+
+/*# sourceMappingURL=style.css.map */
