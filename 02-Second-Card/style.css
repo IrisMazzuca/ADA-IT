@@ -1,22 +1,24 @@
-.card{
+.card {
     font-family: 'Roboto', sans-serif;
     padding: 0px;
     background-color: #1e1b26;
     width: 400px;
-    height: 700px;
+    height: 100%;
     margin: auto;
     border-radius: 10px;
     box-shadow: 2px 3px 7px 3px #aaa;
     display: flex;
     flex-direction: column;
 }
-.card-img{
+
+.card-img {
     padding: 0px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     width: 100%;
 }
-.card-title{
+
+.card-title {
     font-family: 'Montserrat', sans-serif;
     color: #e7e7e7;
     font-weight: 200;
@@ -24,12 +26,14 @@
     padding-left: 20px;
     margin-bottom: -20px;
 }
-.card-subtitle{
+
+.card-subtitle {
     color: #9b9b9b;
     text-align: left;
     padding-left: 20px;
 }
-.card-summary{
+
+.card-summary {
     font-family: 'Montserrat', sans-serif;
     color: #e7e7e7;
     text-align: left;
@@ -38,7 +42,8 @@
     padding-right: 20px;
     font-size: 16px;
 }
-.card-text{
+
+.card-text {
     color: #9b9b9b;
     padding-left: 20px;
     padding-right: 20px;
@@ -49,7 +54,8 @@
     margin-top: -1px;
     margin-bottom: -10px;
 }
-.card-actors{
+
+.card-actors {
     color: #e7e7e7;
     font-style: italic;
     text-align: left;
@@ -58,9 +64,10 @@
     margin-top: -1px;
     margin-bottom: -10px;
 }
-.card-button{
-    color:  #fe4141;
-    text-align:  left;
+
+.card-button {
+    color: #fe4141;
+    text-align: left;
     text-decoration: none;
     display: inline-block;
     border: 1px solid #fe4141;
@@ -70,7 +77,8 @@
     padding: 5px;
     margin-right: 190px;
 }
-.card-play{
+
+.card-play {
     text-align: center;
     padding-left: 10px;
     margin-left: -10px;

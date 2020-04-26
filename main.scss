@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+//variables
+//colors
+$color-black: #000;
+$color-white: #fff;
+$color-pink: #db2e93;
+$color-dark-pink: #a71c6d;
+$color-blue: #0e49b8;
+$color-dark-blue: #072866;
+//spacing
+$sp0: 0.3rem;
+$sp1: 0.5rem;
+$sp2: 1rem;
+$sp3: 1.5rem;
+$sp4: 2rem;
+$sp5: 3rem;
+$sp6: 5rem;
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    margin: $sp2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+    &__title {
+        padding: 0 $sp1 $sp1 $sp1;
+    }
+
+    .header__title::before {
+        content: "\25E6";
+        position: relative;
+        left: -1rem;
+    }
+
+    .header__title::after {
+        content: "\25E6";
+        position: relative;
+        right: -1rem;
+    }
+
+
+    a>i {
+        font-size: 2rem;
+        color: $color-pink;
+        padding: $sp0;
+    }
+
+    a>i:hover {
+        color: $color-dark-pink;
+    }
+}
+
+main {
+    width: 100%;
+    margin-top: $sp4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .main__subtitle {
+
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .main__image {
+        position: relative;
+        top: -3rem;
+        right: -10rem;
+    }
+}
