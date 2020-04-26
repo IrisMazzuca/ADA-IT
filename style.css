@@ -33,8 +33,8 @@ header .header__title::after {
   right: -1rem;
 }
 header a > i {
-  font-size: 2rem;
-  color: #db2e93;
+  font-size: 2.2rem;
+  color: #e768b2;
   padding: 0.3rem;
 }
 header a > i:hover {
@@ -56,11 +56,12 @@ main .main__subtitle {
 }
 main .main__image {
   position: relative;
-  top: -2.5rem;
+  top: -3rem;
   right: -9rem;
   width: 40%;
 }
 main .main__course {
+  font-size: 1.2rem;
   margin-top: -2rem;
   text-transform: uppercase;
 }
@@ -69,7 +70,20 @@ main .main__course {
   width: 80%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   margin-top: 3rem;
+}
+
+.card__figure {
+  padding: 1rem;
+  background-color: white;
+  box-shadow: 1px 1px 3px #adadad;
+}
+
+.card__figure:hover {
+  box-shadow: 1px 1px 10px #5f5b5b98;
+  transform: scale(1.05);
+  overflow: hidden;
 }
 
 .image {

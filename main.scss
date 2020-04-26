@@ -4,7 +4,7 @@
 //colors
 $color-black: #000;
 $color-white: #fff;
-$color-pink: #db2e93;
+$color-pink: #e768b2;
 $color-dark-pink: #a71c6d;
 $color-blue: #0e49b8;
 $color-dark-blue: #072866;
@@ -56,7 +56,7 @@ header {
 
 
     a>i {
-        font-size: 2rem;
+        font-size: 2.2rem;
         color: $color-pink;
         padding: $sp0;
     }
@@ -83,13 +83,14 @@ main {
 
     .main__image {
         position: relative;
-        top: -2.5rem;
+        top: -3rem;
         right: -9rem;
         width: 40%;
         ;
     }
 
     .main__course {
+        font-size: 1.2rem;
         margin-top: -2rem;
         text-transform: uppercase;
     }
@@ -99,8 +100,21 @@ main {
     width: 80%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     margin-top: $sp5;
 
+}
+
+.card__figure {
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 1px 1px 3px rgb(173, 173, 173);
+}
+
+.card__figure:hover {
+    box-shadow: 1px 1px 10px #5f5b5b98;
+    transform: scale(1.05);
+    overflow: hidden;
 }
 
 .image {
