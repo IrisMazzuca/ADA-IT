@@ -77,12 +77,32 @@ main {
     .main__subtitle {
 
         font-size: 1.5rem;
-        font-weight: 600;
+        font-weight: 500;
+        margin-left: -1rem;
     }
 
     .main__image {
         position: relative;
-        top: -3rem;
-        right: -10rem;
+        top: -2.5rem;
+        right: -9rem;
+        width: 40%;
+        ;
     }
+
+    .main__course {
+        margin-top: -2rem;
+        text-transform: uppercase;
+    }
+}
+
+.card {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: $sp5;
+
+}
+
+.image {
+    width: 300px;
 }
