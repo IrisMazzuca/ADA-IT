@@ -1,17 +1,17 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #fff;
     font-family: 'Raleway', sans-serif;
     display: flex;
     justify-content: center;
 }
 
-.container{
+.container {
     background: linear-gradient(0deg, #22daab, #22c1c3);
     margin: 50px;
     padding: 50px;
@@ -22,18 +22,18 @@ body{
     justify-content: center;
 }
 
-.card{  
+.card {
     margin: 35px;
     width: 370px;
     border-radius: 20px;
 }
 
-.header{
+.header {
     position: relative;
     height: 270px;
 }
 
-.img{
+.img {
     width: 100%;
     height: 100%;
     border-top-left-radius: 15px;
@@ -42,17 +42,17 @@ body{
     z-index: 0;
 }
 
-.header__items{
+.header__items {
     padding: 15px;
     height: 270px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: baseline;
-    
+
 }
 
-.price{
+.price {
     z-index: 9;
     display: flex;
     flex-direction: column;
@@ -64,25 +64,25 @@ body{
     justify-content: center;
     width: 70px;
     height: 70px;
-    border-radius: 50%;    
+    border-radius: 50%;
 }
 
-span{    
+span {
     font-weight: 600;
     font-size: 18px;
     word-spacing: 3px;
     letter-spacing: 2px;
 }
 
-form{
+form {
     z-index: 9;
 }
 
-.button{
+.button {
     font-size: 13px;
-    width:90px ;
+    width: 90px;
     height: 30px;
-    background-color: rgb(77, 177, 219) ;
+    background-color: rgb(77, 177, 219);
     color: white;
     font-weight: 600;
     text-transform: uppercase;
@@ -91,39 +91,40 @@ form{
     border-radius: 5px;
 }
 
-.body{
+.body {
     background-color: white;
-    padding: 30px;     
+    padding: 30px;
 }
 
-.title, .subtitle{
-    color: #504b4bfa; 
+.title,
+.subtitle {
+    color: #504b4bfa;
     font-size: 22px;
     padding-bottom: 2px;
 }
 
-.title{
+.title {
     cursor: pointer;
 }
 
-.title:hover{
+.title:hover {
     text-decoration: underline;
 }
 
 
-.text{
+.text {
     color: #9c9999fa;
     font-size: 15px;
     padding-top: 12px;
 }
 
-.text2{
+.text2 {
     color: #9c9999fa;
     font-size: 15px;
     padding-top: 15px;
 }
 
-.dates p{
+.dates p {
     padding-top: 10px;
     display: inline-block;
     flex-direction: row;
@@ -136,17 +137,17 @@ form{
     border-radius: 5px;
 }
 
-.date1:hover{
+.date1:hover {
     cursor: pointer;
     background-color: rgba(65, 65, 170, 0.692);
 }
 
-.date2:hover{
+.date2:hover {
     cursor: pointer;
     background-color: rgba(65, 65, 170, 0.692);
 }
 
-.date3:hover{
+.date3:hover {
     cursor: pointer;
     background-color: rgba(65, 65, 170, 0.692);
 }
@@ -155,13 +156,13 @@ hr {
     border: 1px solid lightgray;
 }
 
-.footer{
+.footer {
     background-color: white;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
 
-.icons{
+.icons {
     padding-top: 10px;
     padding-left: 30px;
     padding-right: 30px;
@@ -173,17 +174,45 @@ hr {
     cursor: pointer;
 }
 
-.fa-heart:hover{
+.fa-heart:hover {
     color: rgb(245, 9, 48);
     font-weight: 700;
 }
 
-.fa-bookmark:hover{
+.fa-bookmark:hover {
     color: rgb(245, 9, 48);
     font-weight: 700;
 }
 
-.fa-ellipsis-h:hover{
+.fa-ellipsis-h:hover {
     color: rgb(245, 9, 48);
     font-weight: 700;
+}
+
+.github {
+    width: 3rem;
+    height: 4rem;
+    background-color: #6b69693d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    position: fixed;
+    top: -.6rem;
+    left: 1rem;
+}
+
+.github:hover {
+    cursor: pointer;
+    background-color: #6b69698e;
+    box-shadow: 0 0 10px 1px #d1d1d1;
+}
+
+.github>a>i {
+    font-size: 1.9rem;
+    color: #000;
+}
+
+.github>a:visited {
+    color: #000;
 }

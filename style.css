@@ -20,7 +20,7 @@ header {
   justify-content: center;
 }
 header__title {
-  padding: 0 0.5rem 0.5rem 0.5rem;
+  padding: 0 0.8rem 0.8rem 0.8rem;
 }
 header .header__title::before {
   content: "◦";
@@ -52,12 +52,12 @@ main {
 main .main__subtitle {
   font-size: 1.5rem;
   font-weight: 500;
-  margin-left: -1rem;
+  margin-left: -0.5rem;
 }
 main .main__image {
   position: relative;
   top: -3rem;
-  right: -9rem;
+  right: -10rem;
   width: 40%;
 }
 main .main__course {
@@ -75,6 +75,7 @@ main .main__course {
 }
 
 .card__figure {
+  margin: 0.8rem;
   padding: 1rem;
   background-color: white;
   box-shadow: 1px 1px 3px #adadad;

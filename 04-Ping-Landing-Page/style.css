@@ -7,18 +7,18 @@
   color: hsl(228, 45%, 44%);
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   font-family: 'Libre Franklin', sans-serif;
   font-size: 20px;
 }
 
-.container{
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,36 +28,36 @@ body{
   margin-right: auto;
   width: 1000 px;
   ;
-  
+
 }
 
-.logo{
+.logo {
   margin-top: 30px;
 }
 
-.title{
+.title {
   margin-top: 30px;
   font-size: 40px;
   font-weight: 100;
   color: hsl(0, 0%, 59%);
 }
 
-.span{
+.span {
   font-weight: 700;
   color: black;
 }
 
-.subtitle{
+.subtitle {
   margin-top: 10px;
   color: hsl(209, 33%, 12%);
 }
 
-.form{
+.form {
   position: relative;
   outline: none;
 }
 
-.input{
+.input {
   height: 45px;
   width: 350px;
   padding-left: 10px;
@@ -66,11 +66,11 @@ body{
   outline: none;
 }
 
-.input::placeholder{
+.input::placeholder {
   color: rgba(199, 194, 194, 0.87);
 }
 
-.button{
+.button {
   position: relative;
   right: -5px;
   margin-top: 30px;
@@ -85,7 +85,7 @@ body{
   outline: none;
 }
 
-.button:hover{
+.button:hover {
   cursor: pointer;
   box-shadow: 5px 5px 5px 5px hsl(223, 100%, 88%);
 }
@@ -95,19 +95,47 @@ body{
   margin-bottom: 30px;
 }
 
-.icons{
+.icons {
   display: inline;
   word-spacing: 20px;
-  color:hsl(223, 87%, 63%);
+  color: hsl(223, 87%, 63%);
   margin-bottom: 30px;
-  }
-
-.icons:hover{
-  cursor: pointer; 
 }
 
-.copyright{
+.icons:hover {
+  cursor: pointer;
+}
+
+.copyright {
   font-size: 16px;
   color: rgba(177, 172, 172, 0.87);
   margin-bottom: 20px;
+}
+
+.github {
+  width: 3rem;
+  height: 4rem;
+  background-color: #6b69693d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  position: fixed;
+  top: -.6rem;
+  left: 1rem;
+}
+
+.github:hover {
+  cursor: pointer;
+  background-color: #6b69698e;
+  box-shadow: 0 0 10px 1px #d1d1d1;
+}
+
+.github>a>i {
+  font-size: 1.9rem;
+  color: #000;
+}
+
+.github>a:visited {
+  color: #000;
 }

@@ -67,6 +67,7 @@ img {
 
 .github>a>i {
     font-size: 1.9rem;
+    color: #000;
 }
 
 .github>a:visited {

@@ -4,11 +4,39 @@
   box-sizing: border-box;
 }
 
+.github {
+  width: 3rem;
+  height: 4rem;
+  background-color: #6b69693d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  position: fixed;
+  top: -.6rem;
+  left: 1rem;
+}
+
+.github:hover {
+  cursor: pointer;
+  background-color: #6b69698e;
+  box-shadow: 0 0 10px 1px #d1d1d1;
+}
+
+.github>a>i {
+  font-size: 1.9rem;
+  color: #000;
+}
+
+.github>a:visited {
+  color: #000;
+}
+
 body {
   background-image: url("img/bg.jpg");
   font-family: 'Cedarville Cursive', cursive;
   background-repeat: repeat;
- 
+
 }
 
 .gallery {
@@ -46,16 +74,16 @@ img {
   z-index: 1;
 }
 
-.pic1:hover{
+.pic1:hover {
   filter: contrast(200%)
 }
 
 .pic2 {
   transform: rotate(15deg);
-  z-index: 2; 
+  z-index: 2;
 }
 
-.pic2:hover{
+.pic2:hover {
   filter: blur(1px)
 }
 
@@ -64,7 +92,7 @@ img {
   z-index: 1;
 }
 
-.pic3:hover{
+.pic3:hover {
   filter: brightness(0.4);
 }
 
@@ -73,7 +101,7 @@ img {
   z-index: 1;
 }
 
-.pic4:hover{
+.pic4:hover {
   filter: grayscale(100%);
 }
 
@@ -82,7 +110,7 @@ img {
   z-index: 1;
 }
 
-.pic5:hover{
+.pic5:hover {
   filter: opacity(25%);
 }
 
@@ -91,7 +119,7 @@ img {
   z-index: 1;
 }
 
-.pic6:hover{
+.pic6:hover {
   filter: sepia(100%);
 }
 
@@ -100,7 +128,7 @@ img {
   z-index: 1;
 }
 
-.pic7:hover{
+.pic7:hover {
   filter: sepia(60%);
 }
 
@@ -109,7 +137,7 @@ img {
   z-index: 1;
 }
 
-.pic8:hover{
+.pic8:hover {
   filter: drop-shadow(16px 16px 20px grey);
 }
 
@@ -118,7 +146,7 @@ img {
   z-index: 1;
 }
 
-.pic9:hover{
+.pic9:hover {
   filter: saturate(60%);
 }
 
@@ -127,7 +155,7 @@ img {
   z-index: 1;
 }
 
-.pic10:hover{
+.pic10:hover {
   filter: grayscale(100%);
 }
 
@@ -136,6 +164,6 @@ img {
   z-index: 1;
 }
 
-.pic11:hover{
+.pic11:hover {
   filter: saturate(200%);
 }

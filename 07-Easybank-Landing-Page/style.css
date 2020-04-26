@@ -17,6 +17,35 @@
   color: hsl(228, 45%, 44%);
 }
 
+.github {
+  width: 3rem;
+  height: 4rem;
+  background-color: #6b69693d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  position: fixed;
+  top: -.6rem;
+  left: 1rem;
+  z-index: 10;
+}
+
+.github:hover {
+  cursor: pointer;
+  background-color: #6b69698e;
+  box-shadow: 0 0 10px 1px #d1d1d1;
+}
+
+.github>a>i {
+  font-size: 1.9rem;
+  color: #000;
+}
+
+.github>a:visited {
+  color: #000;
+}
+
 * {
   margin: 0;
   padding: 0;
