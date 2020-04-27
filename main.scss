@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt&display=swap');
 
 //variables
 //colors
 $color-black: #000;
 $color-white: #fff;
-$color-pink: #e768b2;
+$color-pink: #f5c5e2e7;
 $color-dark-pink: #a71c6d;
 $color-blue: #0e49b8;
 $color-dark-blue: #072866;
@@ -28,15 +29,18 @@ body {
     font-family: 'Poppins', sans-serif;
     width: 100%;
     overflow-x: hidden;
+    background: url(top-acuarela.png);
+    background-repeat: no-repeat;
 }
 
 header {
-    margin: $sp2;
+    margin: -.5rem 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-
+    font-family: 'Rock Salt', cursive;
+    color: $color-white;
 
     &__title {
         padding: 0 $sp1 $sp1 $sp1;
@@ -45,24 +49,24 @@ header {
     .header__title::before {
         content: "\25E6";
         position: relative;
-        left: -1rem;
+        left: 0;
     }
 
     .header__title::after {
         content: "\25E6";
         position: relative;
-        right: -1rem;
+        right: 0;
     }
 
 
     a>i {
         font-size: 2.2rem;
-        color: $color-pink;
+        color: $color-white;
         padding: $sp0;
     }
 
     a>i:hover {
-        color: $color-dark-pink;
+        color: $color-pink;
     }
 }
 
@@ -78,7 +82,8 @@ main {
 
         font-size: 1.5rem;
         font-weight: 500;
-        margin-left: -.5rem;
+        margin: $sp3 0 0 -.5rem;
+
     }
 
     .main__image {
@@ -120,4 +125,18 @@ main {
 
 .image {
     width: 300px;
+}
+
+.acuarela-left {
+    width: 200px;
+    position: absolute;
+    left: 0;
+    top: 30rem;
+}
+
+.acuarela-right {
+    width: 200px;
+    position: absolute;
+    right: 0;
+    top: 65rem;
 }
