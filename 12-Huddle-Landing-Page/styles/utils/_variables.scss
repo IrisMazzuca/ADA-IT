@@ -2,21 +2,23 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap');
 
 // The designs were created to the following widths:
-$sm: 375px; //size mobile
+$sm: 600px; //size mobile
 $sd: 1440px; //size desktop
 
 // Colors:
 $primary-color-pink: hsl(322, 100%, 66%);
+$soft-pink: hsl(322, 82%, 83%);
 $very-pale-cyan: hsl(191, 76%, 92%);
 $very-dark-cyan: hsl(192, 100%, 9%);
 $grayish-blue: hsl(208, 11%, 55%);
+$grayish-button: hsl(0, 44%, 95%);
 $white: hsl(0, 0%, 100%);
 $black: hsl(0, 0%, 0%);
 
 // Font:
 $font-size-1: 18px;
 $font-family-poppins: "Poppins";
-$font-family-openSans: "Open Sans";
+$font-family-open-sans: "Open Sans";
 
 // Spacing:
 $sp0: 0.3rem; //4,8px

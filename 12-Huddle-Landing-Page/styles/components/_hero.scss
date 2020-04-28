@@ -1,0 +1,33 @@
+.hero {
+    margin-top: $sp6;
+
+    &__info__title {
+        padding: $sp3 $sp5;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    &__info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__info__description {
+        padding: 0 $sp5 $sp3 $sp5;
+        text-align: center;
+        line-height: 1.8rem;
+    }
+
+    &__img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__mockups{
+            width: 80%;
+        }
+    }
+}

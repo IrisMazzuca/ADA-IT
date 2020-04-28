@@ -1,0 +1,29 @@
+.btn{
+    padding: $sp1 $sp4; 
+    border-radius: $sp2;
+    border: none;
+    outline: none;
+    font-weight: 600; 
+    
+    &--grey {
+        background-color: whitesmoke;
+        box-shadow: 0 1px 2px 1px rgb(226, 221, 221);
+    }
+
+    &:hover{
+        cursor: pointer;
+    }
+
+    &--pink {
+        background-color: $primary-color-pink;
+        color: $white;
+        padding: $sp2 $sp6;
+        border-radius: $sp4;
+        margin-top: $sp1;
+        margin-bottom: $sp6;
+
+        &:hover {
+            box-shadow: 0 1px 5px 3px $soft-pink;
+        }
+    }
+}

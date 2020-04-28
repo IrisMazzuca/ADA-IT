@@ -1,0 +1,15 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__img {
+    width: 100%;
+
+    &__image{
+        width: 80%;
+        padding: $sp6 0;
+    }
+}
