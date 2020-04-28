@@ -5,6 +5,7 @@
         padding: $sp3 $sp5;
         font-size: 2rem;
         text-align: center;
+        font-family: $font-family-poppins;
     }
 
     &__info{
@@ -18,6 +19,7 @@
         padding: 0 $sp5 $sp3 $sp5;
         text-align: center;
         line-height: 1.8rem;
+        color: $very-dark-cyan;
     }
 
     &__img{

@@ -1,8 +1,9 @@
 main{
-    margin: $sp4 $sp1 $sp4 $sp4;
+    margin: $sp4 $sp1 0 $sp4;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    background-color: whitesmoke;
+    
 }

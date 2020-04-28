@@ -49,6 +49,7 @@
   padding: 1.5rem 3rem;
   font-size: 2rem;
   text-align: center;
+  font-family: "Poppins";
 }
 .hero__info {
   display: flex;
@@ -60,6 +61,7 @@
   padding: 0 3rem 1.5rem 3rem;
   text-align: center;
   line-height: 1.8rem;
+  color: #00252e;
 }
 .hero__img {
   width: 100%;
@@ -76,14 +78,43 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 1.5rem 3rem;
+  margin: 1.5rem 0;
+  background-color: white;
+  border-radius: 2rem;
+  box-shadow: 0 1px 1px 7px #f7f3f3;
 }
-
+.card--float {
+  padding: 0.5rem 3rem;
+  position: relative;
+  margin-top: -5rem;
+  bottom: -10rem;
+}
+.card--float .card__info__title {
+  font-size: 1.2rem;
+  padding-top: 3rem;
+}
 .card__img {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .card__img__image {
   width: 80%;
   padding: 4rem 0;
+}
+.card__info {
+  text-align: center;
+}
+.card__info__title {
+  padding-bottom: 1.5rem;
+  color: #00252e;
+  font-family: "Poppins";
+}
+.card__info__description {
+  color: #808d99;
+  font-size: 1rem;
 }
 
 body {
@@ -99,15 +130,80 @@ header {
 }
 
 main {
-  margin: 2rem 0.5rem 2rem 2rem;
+  margin: 2rem 0.5rem 0 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: whitesmoke;
 }
 
-footer {
-  margin: 2rem 0.5rem 2rem 2rem;
+.footer {
+  width: 100%;
+  margin: 2rem 0 1rem 0;
+  padding: 10rem 0.5rem 2rem 2rem;
+  background-color: #00252e;
+  color: #f8eded;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.footer__logo {
+  display: inline-block;
+  width: 35%;
+  height: 35%;
+  padding-bottom: 2rem;
+}
+.footer__contact__location {
+  padding: 0 6rem 2rem 0;
+}
+.footer__contact__location > i {
+  padding-right: 1rem;
+}
+.footer__contact__phone {
+  padding: 0 6rem 2rem 0;
+}
+.footer__contact__phone > i {
+  padding-right: 1rem;
+}
+.footer__contact__email {
+  padding: 0 6rem 2rem 0;
+}
+.footer__contact__email > i {
+  padding-right: 1rem;
+}
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+}
+.footer__nav__hiper {
+  padding: 0 6rem 1rem 0;
+  text-decoration: none;
+  color: #f8eded;
+}
+.footer__icons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1.5rem 0;
+  font-size: 1.2rem;
+}
+.footer__icons > a {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  color: #f8eded;
+}
+.footer__icons > a > i {
+  padding-right: 2rem;
+}
+.footer__copyright {
+  width: 100%;
+  text-align: center;
+  font-size: 0.7rem;
 }
 
 /*# sourceMappingURL=style.css.map */

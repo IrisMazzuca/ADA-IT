@@ -1,3 +1,86 @@
-footer{
-    margin: $sp4 $sp1 $sp4 $sp4;
+.footer {
+    width: 100%;
+    margin: $sp4 0 $sp2 0;
+    padding: $sp8 $sp1 $sp4 $sp4;
+    background-color: $very-dark-cyan;
+    color: $grayish-button;
+    font-size: .9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+
+    &__logo {
+        display: inline-block;
+        width: 35%;
+        height: 35%;
+        padding-bottom: $sp4;
+    }
+
+
+    &__contact__location {
+        padding: 0 $sp7 $sp4 0;
+
+        > i {
+            padding-right: 1rem;
+        }
+    }
+
+    &__contact__phone {
+        padding: 0 $sp7 $sp4 0;
+
+        > i {
+            padding-right: 1rem;
+        }
+    }
+
+    &__contact__email {
+        padding: 0 $sp7 $sp4 0;
+
+        > i {
+            padding-right: 1rem;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+
+        &__hiper {
+            padding: 0 $sp7 $sp2 0;
+            text-decoration: none;
+            color: $grayish-button ;
+        }
+    }
+
+    &__icons {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: $sp3 0;
+        font-size: 1.2rem;
+      
+        > a {
+            display: flex;
+            flex-direction: row;
+            text-decoration: none;
+            color: $grayish-button;
+            
+        }
+      
+        > a > i {
+            padding-right: 2rem;
+         
+        }
+        
+    }
+
+    &__copyright {
+        width: 100%;
+        text-align: center;
+        font-size: .7rem;
+    }
+      
 }

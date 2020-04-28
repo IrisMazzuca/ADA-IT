@@ -3,13 +3,53 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+    padding: $sp3 $sp5;
+    margin: $sp3 0;
+    background-color: $white;
+    border-radius: $sp4;
+    box-shadow: 0 1px 1px 7px rgb(247, 243, 243);
 
-.card__img {
-    width: 100%;
+    &--float {
+        padding: $sp1 $sp5;
+        position: relative;
+        margin-top: -5rem;
+        bottom: -10rem ;
 
-    &__image{
-        width: 80%;
-        padding: $sp6 0;
+        .card__info__title {
+            font-size: 1.2rem;
+            padding-top: $sp5;
+    
+        }       
     }
+
+    &__img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__image {
+            width: 80%;
+            padding: $sp6 0;
+        }
+    }
+
+    &__info {
+        text-align: center;
+
+        &__title {
+            padding-bottom: $sp3;
+            color: $very-dark-cyan;
+            font-family: $font-family-poppins;
+        }
+
+        &__description {
+            color: $grayish-blue;
+            font-size: 1rem;
+        }
+    }
+
+   
+
 }
+
