@@ -5,30 +5,66 @@
     background-color: $very-dark-cyan;
     color: $grayish-button;
     font-size: .9rem;
+
+    &__orientation {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+
+        @media screen and (min-width: $sm) {
+
+        display: flex;  
+        flex-direction: row;
+        align-content: space-between;
+        align-items: center;
+
+        }
+    }
+   
+
+@media screen and (min-width: $sm) {
+    
+    &__contact{
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        align-items: flex-start;
+
+    }
+}
     
 
     &__logo {
         display: inline-block;
-        width: 35%;
-        height: 35%;
+        width: 45%;
+        height: 45%;
         padding-bottom: $sp4;
+
     }
 
 
     &__contact__location {
         padding: 0 $sp7 $sp4 0;
 
+        @media screen and (min-width: $sm) {
+            padding-right: 5rem;
+        }
+
+
         > i {
             padding-right: 1rem;
         }
+
     }
 
     &__contact__phone {
         padding: 0 $sp7 $sp4 0;
+
+        @media screen and (min-width: $sm) {
+            padding-right: 5rem;
+        }
 
         > i {
             padding-right: 1rem;
@@ -38,12 +74,15 @@
     &__contact__email {
         padding: 0 $sp7 $sp4 0;
 
+       
+
         > i {
             padding-right: 1rem;
         }
     }
 
     &__nav {
+        
         display: flex;
         flex-direction: column;
 
@@ -52,7 +91,16 @@
             text-decoration: none;
             color: $grayish-button ;
         }
+
+        @media screen and (min-width: $sm) {
+            width: 25%;
+        }
+        
+
+
     }
+
+
 
     &__icons {
         width: 100%;
@@ -74,6 +122,10 @@
             padding-right: 2rem;
          
         }
+
+        @media screen and (min-width: $sm) {
+            width: 25%;
+        }
         
     }
 
@@ -81,6 +133,11 @@
         width: 100%;
         text-align: center;
         font-size: .7rem;
+
+        @media screen and (min-width: $sm) {
+            text-align: right;
+        }
     }
+
       
 }

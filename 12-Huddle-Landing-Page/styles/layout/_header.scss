@@ -1,6 +1,10 @@
 header{
     background-color: $very-pale-cyan;
     background: url(../images/bg-hero-mobile.svg);
-    margin: $sp4 $sp1 $sp4 $sp4;
+    margin: $sp6 $sp1 $sp4 $sp4;
   
+    @media screen and (min-width: $sm) {
+        margin-right: $sp4;
+    }
+        
 }

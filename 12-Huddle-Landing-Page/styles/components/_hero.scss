@@ -1,11 +1,9 @@
 .hero {
     margin-top: $sp6;
 
-    &__info__title {
-        padding: $sp3 $sp5;
-        font-size: 2rem;
-        text-align: center;
-        font-family: $font-family-poppins;
+    @media screen and (min-width: $sm) {
+        display: flex;
+        width: 100%;
     }
 
     &__info{
@@ -13,6 +11,22 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+
+        @media screen and (min-width: $sm) {
+           width: 45%;
+           align-items: flex-start;
+        }
+    }
+
+    &__info__title {
+        padding: $sp3 $sp5;
+        font-size: 2rem;
+        text-align: center;
+        font-family: $font-family-poppins;
+
+        @media screen and (min-width: $sm) {
+            text-align: left;
+         }
     }
 
     &__info__description {
@@ -20,6 +34,10 @@
         text-align: center;
         line-height: 1.8rem;
         color: $very-dark-cyan;
+
+        @media screen and (min-width: $sm) {
+            text-align: left;
+         }
     }
 
     &__img{
@@ -27,6 +45,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @media screen and (min-width: $sm) {
+            width: 55%;
+         }
 
         &__mockups{
             width: 80%;

@@ -4,7 +4,16 @@
     border: none;
     outline: none;
     font-weight: 600; 
-    
+
+    @media screen and (min-width: $sm) {
+
+        &--margin {
+            // text-align: left;
+            margin-left: $sp5;
+        }
+    } 
+  
+       
     &--grey {
         background-color: whitesmoke;
         box-shadow: 0 1px 2px 1px rgb(226, 221, 221);
@@ -25,5 +34,8 @@
         &:hover {
             box-shadow: 0 1px 5px 3px $soft-pink;
         }
+
+       
     }
+
 }
