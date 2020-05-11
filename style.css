@@ -101,6 +101,13 @@ main .main__course {
   width: 300px;
 }
 
+.bold {
+  text-align: right;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #212130;
+}
+
 .acuarela-left {
   width: 200px;
   position: absolute;

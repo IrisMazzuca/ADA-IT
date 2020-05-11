@@ -4,6 +4,7 @@
 //variables
 //colors
 $color-black: #000;
+$color-blue-grey: rgb(33, 33, 48);
 $color-white: #fff;
 $color-pink: #f5c5e2e7;
 $color-dark-pink: #a71c6d;
@@ -132,6 +133,12 @@ main {
     width: 300px;
 }
 
+.bold {
+    text-align: right;
+    font-weight: 500;
+    font-size: .9rem;
+    color: $color-blue-grey;
+}
 .acuarela-left {
     width: 200px;
     position: absolute;
