@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">      
+            <h1 class="header__title">TAMAGOTCHI</h1>
+        </div>  
+        <div class="main">
+            <div class="counter">
+                <h2 class="counter__item"><img class="counter__img" src="cardiogram.png" alt=""> Salud:  <span id="healthSpan"></span></h2>
+                <h2 class="counter__item"><img class="counter__img" src="emoticons.png" alt=""> Felicidad:  <span id="happinessSpan"></span></h2>
+                <h2 class="counter__item"><img class="counter__img" src="miscellaneous.png" alt=""> Limpieza:  <span id="cleanlinessSpan"></span></h2>
+                <h2 class="counter__item"><img class="counter__img" src="leaf.png" alt=""> Energia:  <span id="energySpan"></span></h2>
+            </div>  
+            <div class="container__btn">
+                <button class="btn btn--red" onclick="tamagochi('ALIMENTAR')">ALIMENTAR</button>
+                <button class="btn btn--orange" onclick="tamagochi('JUGAR')">JUGAR</button>
+                <button class="btn btn--green" onclick="tamagochi('DORMIR')">DORMIR</button>
+                <button class="btn btn--mint" onclick="tamagochi('VACUNAR')">VACUNAR</button>
+                <button class="btn btn--blue" onclick="tamagochi('BAÑAR')">BAÑAR</button>
+                <button class="btn btn--violet" onclick="tamagochi('RETAR')">RETAR</button>
+                <button class="btn btn--pink" onclick="tamagochi('ACARICIAR')">ACARICIAR</button>
+                <!-- <button id="acariciar">ACARICIAR</button> -->
+            </div>
+         
+            <div class="container">
+                <div class="drop-shape"></div>
+                <div class="eye-left"></div>
+                <div class="eye-left--pink"></div>
+                <div class="eye-right"></div>
+                <div class="eye-right--pink"></div>
+                <div class="cheek-left"></div>
+                <div class="cheek-right"></div>
+                <div class="mouth"></div>
+                <div class="mouth--pink"></div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="tamagotchi.js"></script>
+</body>
+</html>
