@@ -59,7 +59,7 @@ const feed = () => {
 
 const play = () => {
     happiness += 2;
-    energy -= 2;
+    energy -= 4;
     cleanliness -= 1;
 };
 
@@ -70,7 +70,7 @@ const sleep = () => {
 };
 
 const vaccinate = () => {
-    health += 5;
+    health += 2;
     happiness -= 6;
 };
 
@@ -80,10 +80,11 @@ const bath = () => {
 
 const scold = () => {
     happiness -= 3;
+    health -= 3;
 };
 
 const stroke = () => {
-    happiness += 4;
+    happiness += 2;
 };
 
 // while (health > 0) {
