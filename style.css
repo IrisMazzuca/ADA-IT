@@ -99,6 +99,7 @@ main .main__course {
 
 .image {
   width: 300px;
+  z-index: 0;
 }
 
 .bold {
