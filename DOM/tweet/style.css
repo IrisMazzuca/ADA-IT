@@ -35,7 +35,7 @@ img {
 
 .label {
     color: rgb(255, 255, 255);
-    font-weight: bold;
+    font-weight: 400;
     font-size: 1.5rem;
     font-family: 'Fredoka One', cursive;
     letter-spacing: .2rem;

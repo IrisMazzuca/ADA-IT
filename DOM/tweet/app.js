@@ -4,23 +4,21 @@ const textarea = document.getElementById("textarea");
 const btn = document.getElementById("btn");
 const counter = document.getElementById("counter");
 
-let arrayText = (textarea.value).split("");
-let numCharacters = (arrayText.length);
-let characters = 240;
+
+const characters = 240;
+let actualization = 0;
 
 counter.innerHTML = `~ ${characters} caracteres disponibles ~`;
 
 
-const tweet = () => {
-    characters = characters - numCharacters;
-    counter.innerHTML = `~ ${characters} caracteres disponibles ~`;
-}
-
-textarea.addEventListener = ("keyup", () => {
-    tweet ();
+textarea.addEventListener = ("keypress", (characters, actualization) => {
+    
+    actualization = Number(characters - Number((textarea.value).split("").length));
+    
+    counter.innerHTML = `~ ${actualization} caracteres disponibles ~`;
 })
 
 
-btn.addEventListener = ("click", () => {
+// btn.addEventListener = ("click", () => {
 
-})
+// })
