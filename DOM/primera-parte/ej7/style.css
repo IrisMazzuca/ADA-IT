@@ -1,0 +1,30 @@
+#btn {
+   border: 2px solid white;
+   background-color: rgb(228, 81, 105);
+   border-radius: 2rem;
+   padding: .5rem 1rem;
+   color: white;
+   font-weight: 900;
+   font-size: 1rem;
+   outline: none;
+}
+
+#btn:hover{
+   cursor: pointer;
+   box-shadow: 0 0 10px 1px rgb(245, 182, 224);
+   outline: none;
+}
+
+.title {
+   font-size: 3rem;
+   font-weight: 600;
+   color: rgb(48, 162, 207);
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.title--violet {
+   font-size: 3rem;
+   font-weight: 600;
+   color: rgb(218, 28, 218);
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
