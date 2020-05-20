@@ -11,7 +11,7 @@ let actualization = 0;
 counter.innerHTML = `~ ${characters} caracteres disponibles ~`;
 
 
-textarea.addEventListener = ("keyup", (characters, actualization) => {
+textarea.addEventListener = ("keyup", (event,characters, actualization) => {
     
     actualization = Number(characters - Number((textarea.value).split("").length));
 
@@ -22,13 +22,15 @@ textarea.addEventListener = ("keyup", (characters, actualization) => {
         textarea.classList.add("textarea--error");
         counter.classList.add("counter--error");
         btn.classList.add("btn--error");
+
+        btn.disabled = true;
     }
 })
 
 
-btn.addEventListener = ("click", (characters) => {
+btn.addEventListener = ("click", (event,characters) => {
 
-    textarea.value.innerHTML = "";
+    textarea.innerHTML = "";
 
     counter.innerHTML = `~ ${characters} caracteres disponibles ~`;
 
