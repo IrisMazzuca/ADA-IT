@@ -33,6 +33,10 @@ img {
     font-size: 1.2rem;
 }
 
+.textarea--error {
+    color: rgb(255, 0, 0);
+}
+
 .label {
     color: rgb(255, 255, 255);
     font-weight: 400;
@@ -59,6 +63,10 @@ img {
     color: rgb(255, 255, 255);
     margin-top: .5rem;
     font-size: 1.1rem;
+}
+
+.counter--error {
+    color: rgb(255, 0, 0);
 }
 
 .btn--error {

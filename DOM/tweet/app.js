@@ -11,14 +11,26 @@ let actualization = 0;
 counter.innerHTML = `~ ${characters} caracteres disponibles ~`;
 
 
-textarea.addEventListener = ("keypress", (characters, actualization) => {
+textarea.addEventListener = ("keyup", (characters, actualization) => {
     
     actualization = Number(characters - Number((textarea.value).split("").length));
-    
+
     counter.innerHTML = `~ ${actualization} caracteres disponibles ~`;
+
+    if (actualization < 0) {
+
+        textarea.classList.add("textarea--error");
+        counter.classList.add("counter--error");
+        btn.classList.add("btn--error");
+    }
 })
 
 
-// btn.addEventListener = ("click", () => {
+btn.addEventListener = ("click", (characters) => {
 
-// })
+    textarea.value.innerHTML = "";
+
+    counter.innerHTML = `~ ${characters} caracteres disponibles ~`;
+
+    return alert("✔ Su mensaje fue enviado!");
+})
