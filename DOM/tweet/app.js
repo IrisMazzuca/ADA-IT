@@ -5,34 +5,45 @@ const btn = document.getElementById("btn");
 const counter = document.getElementById("counter");
 
 
-const characters = 240;
-let actualization = 0;
 
-counter.innerHTML = `~ ${characters} caracteres disponibles ~`;
+const maxCharacters = 240;
 
+//counter.innerHTML = maxCharacters;
 
-textarea.addEventListener = ("keyup", (event,characters, actualization) => {
-    
-    actualization = Number(characters - Number((textarea.value).split("").length));
+const actualization = () => {
+    counter.innerHTML = characters();
+};
 
-    counter.innerHTML = `~ ${actualization} caracteres disponibles ~`;
+const characters = () => {
+    return maxCharacters - textarea.value.length;
+};
 
-    if (actualization < 0) {
-
+const errorStyle = () => {
+    if (characters() < 0) {
         textarea.classList.add("textarea--error");
         counter.classList.add("counter--error");
         btn.classList.add("btn--error");
-
         btn.disabled = true;
+
+    } else {
+        textarea.classList.remove("textarea--error");
+        counter.classList.remove("counter--error");
+        btn.classList.remove("btn--error");
+        btn.disabled = false;
     }
-})
+}
+
+textarea.addEventListener("keyup", () => {
+   actualization();
+   errorStyle();
+});
 
 
-btn.addEventListener = ("click", (event,characters) => {
+btn.addEventListener("click", () => {
+    alert(textarea.value);
+    alert("✔ Su mensaje fue enviado!");
+    textarea.value = "";
+    actualization(); 
+});
 
-    textarea.innerHTML = "";
-
-    counter.innerHTML = `~ ${characters} caracteres disponibles ~`;
-
-    return alert("✔ Su mensaje fue enviado!");
-})
+actualization();
