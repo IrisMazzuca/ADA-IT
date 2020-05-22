@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <h2 class="center">
+            <span class="stars"> ★</span>
+            <span class="title"> Dale filtros a tu imagen! </span>
+            <span class="stars"> ★</span>
+        </h2>
+        
+        <form class="form" action="">
+            <label class="label" for="url">Ingrese URL:
+                <input class="input" id="urlInput" type="url">
+            </label>
+            <button class="btn btnEnter" id="btnEnter">Enter</button>
+        </form>
+        <img class="image opacity" id="image" src=""  alt="img">
+        <div class="btn__container">
+            <button class="btn btnGreyscale" id="btnGreyscale">Grayscale</button>
+            <button class="btn btnSepia" id="btnSepia">Sepia</button>
+            <button class="btn btnSaturate" id="btnSaturate">Saturate</button>
+            <button class="btn btnReset" id="btnReset">Reset</button>
+        </div>
+        <p class="example">Podés tomar de ejemplo: https://www.nupciasmagazine.com/wp-content/uploads/2017/07/yoksel-zok-420835-unsplash.jpg</p> 
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

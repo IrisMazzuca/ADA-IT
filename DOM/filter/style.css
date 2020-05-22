@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Happy Monkey', cursive; 
+    font-size: 1rem;
+    background-color: whitesmoke;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    text-align: center;
+    margin: 2rem auto;
+    font-size: 3rem;
+}
+
+.title {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 4rem;
+    
+}
+
+.stars {
+    color: rgb(0, 0, 0);
+    font-size: 4rem;
+    animation: 1s animateStars infinite;
+}
+
+@keyframes animateStars {
+    to {
+      color: rgb(209, 32, 171)
+    }
+}
+
+.msj {
+    color: rgb(255, 255, 255) ;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    background-color:  rgba(240, 82, 206, 0.281);
+    padding: .2rem auto;
+    width: 600px;
+    margin-bottom: 2rem;
+}
+
+.label {
+    margin-left: 1rem;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+
+.btn {
+    outline: none;
+    border: none;
+    padding: 0.4rem 1.1rem;
+    border-radius: .3rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btnEnter {
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    background-color: rgb(0, 0, 0);
+}
+
+.image {
+    width: 400px;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+}
+
+.opacity {
+    opacity: 0;
+}
+
+.btn__container {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btnGreyscale{
+    background-color: rgb(150, 150, 150);
+}
+
+.btnSepia{
+    background-color: rgb(209, 150, 82);
+}
+
+.btnSaturate {
+    background-color: rgb(243, 13, 128);
+}
+
+.btnReset {
+    background-color: rgb(255, 255, 255);
+    color: rgba(0, 0, 0, 0.658);
+    border: 2px solid rgba(0, 0, 0, 0.658);
+}
+
+.greyscale {
+    filter: grayscale(100%);
+}
+
+.sepia {
+    filter: sepia(100%);
+}
+
+.saturate {
+    filter: saturate(200%);
+}
+
+.example {
+    width: 40%;
+    position: fixed;
+    bottom: 1rem;
+    text-align: center;
+    background-color: rgba(240, 82, 206, 0.281);
+}
