@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(11, 35, 44);
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem auto;
+}
+
+img {
+    position: relative;
+    top: .5rem;
+}
+
+.textarea {
+    background-color: rgb(11, 35, 44);
+    border: 2px solid rgb(112, 234, 238);
+    padding: .2rem;
+    caret-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+}
+
+.textarea--error {
+    color: rgb(255, 0, 0);
+}
+
+.label {
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-size: 1.5rem;
+    font-family: 'Fredoka One', cursive;
+    letter-spacing: .2rem;
+}
+
+.btn {
+    margin-top: 2rem;
+    padding: .5rem 1rem;
+    background-color: rgb(112, 234, 238);
+    color: rgb(11, 35, 44);
+    outline: none;
+    border: none;
+    border-radius: .4rem;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Fredoka One', cursive;
+    letter-spacing: .1rem;
+}
+
+.counter {
+    color: rgb(255, 255, 255);
+    margin-top: .5rem;
+    font-size: 1.1rem;
+}
+
+.counter--error {
+    color: rgb(255, 0, 0);
+}
+
+.btn--error {
+    background-color: rgba(190, 190, 190, 0.589);
+    color: rgb(255, 255, 255);
+}
+
+.btn:hover {
+    cursor: pointer;
+}
