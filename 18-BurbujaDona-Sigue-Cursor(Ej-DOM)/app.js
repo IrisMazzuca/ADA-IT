@@ -8,6 +8,6 @@ window.onmousemove = moveElement = (e) => {
     let x = e.pageX;
     let y = e.pageY;
     console.log(x,y);
-    element.style.top = (y + 10) + 'px';
-    element.style.left = (x + 10) + 'px';
+    element.style.top = (y - 75) + 'px';
+    element.style.left = (x - 75) + 'px';
 };
