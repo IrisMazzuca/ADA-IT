@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.trafficLight {
+    width: 250px; 
+    height: 550px;
+    padding: 30px;
+    background-color: rgba(22, 28, 32, 0.9);
+    box-shadow: 0 0 10px 5px rgb(161, 158, 158);
+    border-radius: 5rem;
+    border: 5px solid rgb(22, 28, 32);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgba(20, 17, 17, 0.7);
+    border-top: 10px solid rgba(0,0,0);
+    position: relative;
+}
+
+.circle::after {
+    content: "";
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 20px;
+    right: 18px;
+    border-radius: 50%;
+    border-right: 4px solid rgba(255, 255, 255, 0.555);   
+}
+
+.red {
+    background-color: rgb(255, 0, 0);
+    box-shadow: 0 0 20px 2px rgb(255, 0, 0);
+}
+
+.yellow {
+    background-color: rgb(255, 230, 0);
+    box-shadow: 0 0 20px 2px rgb(255, 230, 0);
+}
+
+.green {
+    background-color: rgb(0, 255, 0);
+    box-shadow: 0 0 20px 2px rgb(0, 255, 0);
+}
