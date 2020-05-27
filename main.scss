@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@900&display=swap');
 
 //variables
 //colors
 $color-black: #000;
 $color-blue-grey: rgb(33, 33, 48);
 $color-white: #fff;
-$color-pink: #f5c5e2e7;
+$color-pink: #ee769ae7;
 $color-dark-pink: #a71c6d;
 $color-dark-pink-tras: #a8126a98;
 $color-blue: #0e49b8;
@@ -28,81 +29,76 @@ $sp6: 5rem;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", cursive;
     width: 100%;
     overflow-x: hidden;
-    background: url(top-acuarela.png);
-    background-repeat: no-repeat;
+    background: url(Imagenes-para-index/bg.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+
 }
 
 header {
-    margin: -.5rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family: 'Rock Salt', cursive;
-    color: $color-white;
+    font-size: 2rem;
+    font-family: 'Arima Madurai', cursive;
+    color: rgba(0, 0, 0, 0.7);
 
     &__title {
         padding: 0 $sp1 $sp1 $sp1;
     }
 
-    .header__title::before {
-        content: "\276E";
-        padding-right: $sp2;
-        position: relative;
-        left: 0;
-    }
-
-    .header__title::after {
-        content: "\276F";
-        padding-left: $sp2;
-        position: relative;
-        right: 0;
-    }
-
 
     a>i {
-        font-size: 2.2rem;
-        color: $color-dark-pink;
+        font-size: 2.5rem;
+        color: $color-pink;
         padding: $sp0;
-        margin-top: $sp4;
+       
     }
 
     a>i:hover {
-        color: $color-dark-pink-tras;
+        color:	#ff0b54a6;
+    }
+
+    .pink {
+        color: #ff0b55b4 ;
     }
 }
 
 main {
     width: 100%;
-    margin-top: $sp4;
+    margin-top: $sp2;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+   
+
 
     .main__subtitle {
 
         font-size: 1.5rem;
-        font-weight: 500;
-        margin: 0 0 0 -.5rem;
+        font-weight: 300;
+        margin: 0 0 0 1.8rem;
 
     }
 
     .main__image {
         position: relative;
-        top: -3rem;
-        right: -10rem;
+        top: -4rem;
+        right: -11.5rem;
         width: 40%;
         ;
     }
 
     .main__course {
-        font-size: 1.2rem;
-        margin-top: -2rem;
+        font-size: 1.5rem;
+        margin-top: -4rem;
         text-transform: uppercase;
+        font-weight: 500;
     }
 }
 
@@ -111,7 +107,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: $sp5;
+    margin-top: $sp4;
 }
 
 .card__figure {
@@ -140,19 +136,5 @@ main {
     font-size: .9rem;
     color: $color-blue-grey;
 }
-.acuarela-left {
-    width: 200px;
-    position: absolute;
-    left: 0;
-    top: 30rem;
-    z-index: -1;
-}
 
-.acuarela-right {
-    width: 200px;
-    position: absolute;
-    right: 0;
-    top: 65rem;
-    z-index: -1;
-}
 
