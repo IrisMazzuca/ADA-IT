@@ -1,0 +1,40 @@
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.container li{
+    list-style: none;
+}
+
+.image {
+    margin: 2rem;
+    width: 300px;
+    border-radius: 1rem;
+}
+
+#btn {
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    outline: none;
+    background-color: rgb(226, 17, 132);
+    color: #fafafa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#btn:hover {
+    cursor: pointer;
+}
+
+
