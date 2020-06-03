@@ -1,0 +1,102 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;     
+}
+
+.body {
+    background: rgb(211, 204, 227);
+    background: -webkit-linear-gradient(to right, rgb(211, 204, 227), rgb(233, 228, 240));
+    background: linear-gradient(to right, rgb(211, 204, 227), rgb(233, 228, 240));
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+.element {
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle, rgb(245, 221, 241) 30%, rgba(255, 139, 226, 0.4) 61%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.element::after{
+    content: "";
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border-right: 4px solid rgba(255, 255, 255, 0.45);
+    position: absolute;
+    right: .5rem;
+}
+
+.element::before{
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color:  rgba(255, 255, 255, 0.45);
+    position: absolute;
+    top: .7rem;
+    right: 6rem;
+    
+}
+
+.element-two {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 5rem;
+    right: 10rem;
+}
+
+.element-two::after {
+    width: 80px;
+    height: 80px;
+}
+
+.element-two::before {
+    width: 8px;
+    height: 8px;
+    right: 4rem;
+}
+.github {
+    width: 3rem;
+    height: 4rem;
+    background-color: rgba(107, 105, 105, 0.239);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    position: fixed;
+    top: -.6rem;
+    left: 1rem;
+}
+
+.github:hover {
+    cursor: pointer;
+    background-color: rgba(107, 105, 105, 0.557);
+    box-shadow: 0 0 10px 1px rgb(209, 209, 209);
+}
+
+.github>a>i {
+    font-size: 1.9rem;
+    color: rgb(0, 0, 0);
+}
+
+.github>a:visited {
+    color: rgb(0, 0, 0);
+}
+
