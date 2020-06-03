@@ -41,7 +41,7 @@ body {
 
 .gallery {
   width: 80%;
-  margin: auto;
+  margin: 2.5rem auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -166,4 +166,11 @@ img {
 
 .pic11:hover {
   filter: saturate(200%);
+}
+
+@media screen and (max-width:680px) {
+  img {
+    height: 200px;
+    width: 200px;
+  }
 }
