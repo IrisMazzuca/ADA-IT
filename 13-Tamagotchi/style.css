@@ -9,12 +9,12 @@
 }
 
 body {
-    overflow: hidden;
     background-color: rgb(236, 236, 188);
     font-family: 'Comfortaa', cursive;
 }
 
 .container{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,11 +36,12 @@ body {
 .header__title {
     font-family: 'Fredoka One', cursive;
     font-size: 2rem;
-    color: #e8858e;
-    text-shadow: -3px 3px #ffffff, -3px -3px #ffffff, 3px -3px #ffffff, 3px 3px #f3f3f2, 6px 6px #6ac7c2;
+    color: hsl(355, 68%, 72%);
+    text-shadow: -3px 3px rgb(255, 255, 255), -3px -3px #ffffff, 3px -3px #ffffff, 3px 3px #f3f3f2, 6px 6px #6ac7c2;
     outline: 8px rgba(236, 232, 17) dashed;
     box-shadow: 0 0 0 8px rgba(104, 230, 223);
     animation: 1s animateBorder infinite; 
+    margin: .2rem 1rem;
 }
 
 @keyframes animateBorder {
@@ -53,6 +54,7 @@ body {
 @media screen and (min-width:680px) {
     .header__title {
         font-size: 4rem;
+        margin: auto 5rem;
     }
 }
 
@@ -75,13 +77,20 @@ body {
 
 .counter {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     align-content: center;
 }
 
+@media screen and (min-width:680px) {
+    .counter {
+        flex-direction: row;
+    }
+}
+
 .counter__item {
-    margin: 0 2rem;
+    margin: .5rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-around; 
@@ -96,10 +105,17 @@ body {
 
 .container__btn {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1rem;
     
+}
+
+@media screen and (min-width:680px) {
+    .container__btn {
+        flex-direction: row;
+    }
 }
 
 .btn {
@@ -270,7 +286,7 @@ body {
 .github {
     width: 3rem;
     height: 4rem;
-    background-color: #6b69693d;
+    background-color: rgba(107, 105, 105, 0.239);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -282,15 +298,15 @@ body {
 
 .github:hover {
     cursor: pointer;
-    background-color: #6b69698e;
-    box-shadow: 0 0 10px 1px #d1d1d1;
+    background-color: rgba(107, 105, 105, 0.557);
+    box-shadow: 0 0 10px 1px rgb(209, 209, 209);
 }
 
 .github>a>i {
     font-size: 1.9rem;
-    color: #000;
+    color: rgb(0, 0, 0);
 }
 
 .github>a:visited {
-    color: #000;
+    color: rgb(0, 0, 0);
 }
