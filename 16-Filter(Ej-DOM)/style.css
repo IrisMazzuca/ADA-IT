@@ -6,7 +6,7 @@
     box-sizing: border-box;
     font-family:'Happy Monkey', cursive; 
     font-size: 1rem;
-    background-color: whitesmoke;
+    background-color: rgb(245, 245, 245);
 }
 
 .main {
@@ -136,8 +136,7 @@
 
 .example {
     width: 40%;
-    position: fixed;
-    bottom: 1rem;
+    margin-top: 2rem;
     text-align: center;
     background-color: rgba(240, 82, 206, 0.281);
 }
@@ -145,7 +144,7 @@
 .github {
     width: 3rem;
     height: 4rem;
-    background-color: #6b69693d;
+    background-color: rgba(107, 105, 105, 0.239);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -157,16 +156,60 @@
 
 .github:hover {
     cursor: pointer;
-    background-color: #6b69698e;
-    box-shadow: 0 0 10px 1px #d1d1d1;
+    background-color: rgba(107, 105, 105, 0.557);
+    box-shadow: 0 0 10px 1px rgb(209, 209, 209);
 }
 
 .github>a>i {
     font-size: 1.9rem;
-    color: #000;
+    color: rgb(0, 0, 0);
 }
 
 .github>a:visited {
-    color: #000;
+    color: rgb(0, 0, 0);
 }
 
+@media screen and (max-width: 680px) {
+      
+    .center {
+        margin: 1rem auto;
+    }
+    
+    .title, .stars {
+        font-size: 2.5rem;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .input {
+        width: 250px;
+    }
+    
+    .label {
+        text-align: center;
+    }
+  
+    .image {
+        width: 300px;
+    }
+
+    .btn {
+        margin-bottom: 1rem;
+    }    
+
+    .btn__container {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    .example {
+        display: none;
+    }
+}
