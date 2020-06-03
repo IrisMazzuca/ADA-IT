@@ -8,7 +8,7 @@
 }
 
 .body {
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
 }
 
 .flex {
@@ -61,8 +61,8 @@
     padding: .5rem 4rem;
     margin-top: -4rem;
     border-radius: 10rem;
-    border: 3px solid white;
-    color: #fff;
+    border: 3px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     /* text-transform: uppercase; */
     font-family: 'Arima Madurai', cursive;
     font-size: 1.5rem;
@@ -111,7 +111,7 @@
 .github {
     width: 3rem;
     height: 4rem;
-    background-color: #6b69693d;
+    background-color: rgba(107, 105, 105, 0.239);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -123,16 +123,16 @@
 
 .github:hover {
     cursor: pointer;
-    background-color: #6b69698e;
-    box-shadow: 0 0 10px 1px #d1d1d1;
+    background-color: rgba(107, 105, 105, 0.557);
+    box-shadow: 0 0 10px 1px rgb(209, 209, 209);
 }
 
 .github>a>i {
     font-size: 1.9rem;
-    color: #000;
+    color: rgb(0, 0, 0);
 }
 
 .github>a:visited {
-    color: #000;
+    color: rgb(0, 0, 0);
 }
 

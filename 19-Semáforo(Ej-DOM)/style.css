@@ -5,8 +5,8 @@
 }
 
 .flex {
-    min-width: 100vw;
-    min-height: 100vh;
+    min-width: 100%;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,6 +17,7 @@
     width: 250px; 
     height: 550px;
     padding: 30px;
+    margin: 2rem;
     background-color: rgba(22, 28, 32, 0.9);
     box-shadow: 0 0 10px 5px rgb(161, 158, 158);
     border-radius: 5rem;
@@ -66,7 +67,7 @@
 .github {
     width: 3rem;
     height: 4rem;
-    background-color: #6b69693d;
+    background-color: rgba(107, 105, 105, 0.239);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,15 +79,15 @@
 
 .github:hover {
     cursor: pointer;
-    background-color: #6b69698e;
-    box-shadow: 0 0 10px 1px #d1d1d1;
+    background-color: rgba(107, 105, 105, 0.557);
+    box-shadow: 0 0 10px 1px rgb(209, 209, 209);
 }
 
 .github>a>i {
     font-size: 1.9rem;
-    color: #000;
+    color: rgb(0, 0, 0);
 }
 
 .github>a:visited {
-    color: #000;
+    color: rgb(0, 0, 0);
 }
