@@ -21,6 +21,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   font-size: 2rem;
   font-family: "Arima Madurai", cursive;
   color: rgba(0, 0, 0, 0.7);
@@ -53,16 +54,27 @@ main .main__subtitle {
   font-weight: 300;
   margin: 0 0 0 1.8rem;
 }
+@media screen and (max-width: 680px) {
+  main .main__subtitle {
+    padding-bottom: 1rem;
+  }
+}
 main .main__image {
   position: relative;
   top: -4rem;
   right: -11.5rem;
   width: 40%;
 }
+@media screen and (max-width: 680px) {
+  main .main__image {
+    width: 30%;
+  }
+}
 main .main__course {
   font-size: 1.5rem;
   margin-top: -4rem;
   text-transform: uppercase;
+  text-align: center;
   font-weight: 500;
 }
 
@@ -92,6 +104,11 @@ main .main__course {
 .image {
   width: 300px;
   z-index: 0;
+}
+@media screen and (max-width: 680px) {
+  .image {
+    width: 200px;
+  }
 }
 
 .bold {
