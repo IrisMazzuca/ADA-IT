@@ -4,28 +4,32 @@
 
 const tablero =
 [
-  ['📦', '💣', '💣'],
-  ['📦', '📦', '📦'],
-  ['💣', '📦', '📦']
+  ['1', '💣', '💣'],
+  ['1', '2', '2'],
+  ['💣', '1', '0']
 ]
 
-// console.log(tablero[0][0]);
-
-// const bombaUno = tablero[0][1];
-// const bombaDos = tablero[0][2];
-// const bombaTres = tablero[2][0];
-
-
-// let coordenadaFila = Number(prompt("Ingrese la coordenada 1: Nro de fila:"));
-// let coordenadaColumna = Number(prompt("Ingrese la coordenada 2: Nro de columna:"));
-
-
 const casilla = document.querySelectorAll(".casilla");
+const texto = document.getElementById("texto");
 const resultado = document.getElementById("resultado");
-const perdio = document.getElementById("perdio");
+const btn = document.getElementById("btn");
+const cantidad = document.getElementById("cantidad");
+const vidas = document.getElementById("vidas");
 
 let jugable = true;
 let contador = 0;
+let vidaActual = 2;
+
+const restaVida = () => {
+  if (vidaActual > 0){
+  vidaActual--;
+  vidas.textContent = vidaActual;
+  }
+  if (vidaActual = 0) {
+    jugable = false;
+  }
+
+};
 
 const buscaminas = (coor1, coor2) => {
   if(jugable){
@@ -34,24 +38,30 @@ const buscaminas = (coor1, coor2) => {
     if(coordenadaIngresada == "💣" ) {
 
       event.target.textContent = "💥";
-      resultado.textContent ="¡Oh no!¡Has encontrado una bomba!";
-      jugable = false;
-      perdio.textContent = "Perdiste! :(";
+      texto.textContent ="¡Oh no!¡Has encontrado una bomba!";
+      resultado.textContent = "Perdiste!😣";
+      restaVida();
 
     } else  {
       event.target.textContent = "💨";
-      resultado.textContent ="La caja está vacía!";
+      texto.textContent ="La caja está vacía!"
+      cantidad.style.color = "black";
+      cantidad.style.backgroundColor = "lightyellow";
+      cantidad.textContent= `** CUIDADO! ${tablero[coor1][coor2]} 💣 cerca! **`;
       event.target.disabled = true;
       contador++;
       console.log(contador);
       if (contador >= 6) {
         jugable = false;
-        perdio.textContent = "Ganaste!!";
+        resultado.textContent = "Ganaste!!😃";
       }
     } 
   }
 };
 
+btn.addEventListener("click", () => {
+  window.location.reload();
+});
 
 // 📦 📦 📦
 // 📦 📦 📦
