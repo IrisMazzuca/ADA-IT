@@ -25,7 +25,7 @@ const restaVida = () => {
   vidaActual--;
   vidas.textContent = vidaActual;
   }
-  if (vidaActual = 0) {
+  if (vidaActual <= 0) {
     jugable = false;
   }
 
