@@ -11,9 +11,12 @@ body {
   font-family: "Poppins", cursive;
   width: 100%;
   overflow-x: hidden;
-  background: url(Imagenes-para-index/bg.jpg);
-  background-repeat: repeat;
-  background-size: contain;
+  background: #DAE2F8;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #D6A4A4, #DAE2F8);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #D6A4A4, #DAE2F8);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 header {
@@ -28,10 +31,11 @@ header {
 }
 header__title {
   padding: 0 0.8rem 0.8rem 0.8rem;
+  background-color: white;
 }
 header a > i {
   font-size: 2.5rem;
-  color: #ee769ae7;
+  color: rgba(238, 118, 154, 0.906);
   padding: 0.3rem;
 }
 header a > i:hover {
@@ -61,9 +65,9 @@ main .main__subtitle {
 }
 main .main__image {
   position: relative;
-  top: -4rem;
-  right: -11.5rem;
-  width: 40%;
+  top: -2.3rem;
+  right: -11.7rem;
+  width: 20%;
 }
 @media screen and (max-width: 680px) {
   main .main__image {
@@ -72,7 +76,7 @@ main .main__image {
 }
 main .main__course {
   font-size: 1.5rem;
-  margin-top: -4rem;
+  margin-top: -2rem;
   text-transform: uppercase;
   text-align: center;
   font-weight: 500;

@@ -4,14 +4,15 @@
 
 //variables
 //colors
-$color-black: #000;
+$color-black: rgb(0, 0, 0);
 $color-blue-grey: rgb(33, 33, 48);
-$color-white: #fff;
-$color-pink: #ee769ae7;
-$color-dark-pink: #a71c6d;
-$color-dark-pink-tras: #a8126a98;
-$color-blue: #0e49b8;
-$color-dark-blue: #072866;
+$color-white: rgb(255, 255, 255);
+$color-whitesmoke: rgb(245, 245, 245);
+$color-pink: rgba(238, 118, 154, 0.906);
+$color-dark-pink: rgb(167, 28, 109);
+$color-dark-pink-tras: rgba(168, 18, 106, 0.596);
+$color-blue: rgb(14, 73, 184);
+$color-dark-blue: rgb(7, 40, 102);
 //spacing
 $sp0: 0.3rem;
 $sp1: 0.8rem;
@@ -32,9 +33,13 @@ body {
     font-family: "Poppins", cursive;
     width: 100%;
     overflow-x: hidden;
-    background: url(Imagenes-para-index/bg.jpg);
-    background-repeat: repeat;
-    background-size: contain;
+    background: #DAE2F8;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #D6A4A4, #DAE2F8);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #D6A4A4, #DAE2F8);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 
 }
 
@@ -50,21 +55,22 @@ header {
 
     &__title {
         padding: 0 $sp1 $sp1 $sp1;
-    }    
+        background-color: white;
+    }
 
     a>i {
         font-size: 2.5rem;
         color: $color-pink;
         padding: $sp0;
-       
+
     }
 
     a>i:hover {
-        color:	#ff0b54a6;
+        color: #ff0b54a6;
     }
 
     .pink {
-        color: #ff0b55b4 ;
+        color: #ff0b55b4;
     }
 }
 
@@ -75,7 +81,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
+
 
     .main__subtitle {
 
@@ -91,10 +97,10 @@ main {
 
     .main__image {
         position: relative;
-        top: -4rem;
-        right: -11.5rem;
-        width: 40%;
-        
+        top: -2.3rem;
+        right: -11.7rem;
+        width: 20%;
+
         @media screen and (max-width:680px) {
             width: 30%;
         }
@@ -102,7 +108,7 @@ main {
 
     .main__course {
         font-size: 1.5rem;
-        margin-top: -4rem;
+        margin-top: -2rem;
         text-transform: uppercase;
         text-align: center;
         font-weight: 500;
@@ -120,7 +126,7 @@ main {
 .card__figure {
     margin: $sp1;
     padding: $sp2;
-    background-color: whitesmoke;
+    background-color: $color-whitesmoke;
     box-shadow: 1px 1px 3px rgb(173, 173, 173);
     border-radius: $sp3;
     overflow: hidden;
@@ -147,5 +153,3 @@ main {
     font-size: .9rem;
     color: $color-blue-grey;
 }
-
-
