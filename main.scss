@@ -6,7 +6,7 @@
 //colors
 $color-blue-grey: rgb(33, 33, 48);
 $color-black: rgb(0, 0, 0, 0.6);
-$color-grey: rgba(94, 93, 93, 0.644);
+$color-grey: rgba(94, 93, 93, 0.5);
 $color-white: rgb(255, 255, 255);
 $color-whitesmoke: rgb(245, 245, 245);
 $color-blue: rgb(14, 73, 184);
@@ -33,14 +33,12 @@ body {
     width: 100%;
     overflow-x: hidden;
     color: $color-black;
-    background: #DAE2F8;
+    background: #EFEFBB;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #D6A4A4, #DAE2F8);
+    background: -webkit-linear-gradient(to right, #D4D3DD, #EFEFBB);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #D6A4A4, #DAE2F8);
+    background: linear-gradient(to right, #D4D3DD, #EFEFBB);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
 }
 
 header {

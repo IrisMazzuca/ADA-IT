@@ -12,11 +12,11 @@ body {
   width: 100%;
   overflow-x: hidden;
   color: rgba(0, 0, 0, 0.6);
-  background: #DAE2F8;
+  background: #EFEFBB;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #D6A4A4, #DAE2F8);
+  background: -webkit-linear-gradient(to right, #D4D3DD, #EFEFBB);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #D6A4A4, #DAE2F8);
+  background: linear-gradient(to right, #D4D3DD, #EFEFBB);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -39,7 +39,7 @@ header a > i {
   padding: 0.3rem;
 }
 header a > i:hover {
-  color: rgba(94, 93, 93, 0.644);
+  color: rgba(94, 93, 93, 0.5);
 }
 
 main {
