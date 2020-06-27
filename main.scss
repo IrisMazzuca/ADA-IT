@@ -4,15 +4,14 @@
 
 //variables
 //colors
-$color-black: rgb(0, 0, 0);
 $color-blue-grey: rgb(33, 33, 48);
+$color-black: rgb(0, 0, 0, 0.6);
+$color-grey: rgba(94, 93, 93, 0.644);
 $color-white: rgb(255, 255, 255);
 $color-whitesmoke: rgb(245, 245, 245);
-$color-pink: rgba(238, 118, 154, 0.906);
-$color-dark-pink: rgb(167, 28, 109);
-$color-dark-pink-tras: rgba(168, 18, 106, 0.596);
 $color-blue: rgb(14, 73, 184);
 $color-dark-blue: rgb(7, 40, 102);
+
 //spacing
 $sp0: 0.3rem;
 $sp1: 0.8rem;
@@ -33,6 +32,7 @@ body {
     font-family: "Poppins", cursive;
     width: 100%;
     overflow-x: hidden;
+    color: $color-black;
     background: #DAE2F8;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #D6A4A4, #DAE2F8);
@@ -51,32 +51,28 @@ header {
     text-align: center;
     font-size: 2rem;
     font-family: 'Arima Madurai', cursive;
-    color: rgba(0, 0, 0, 0.7);
+
 
     &__title {
-        padding: 0 $sp1 $sp1 $sp1;
+        margin-top: $sp0;
         background-color: white;
     }
 
     a>i {
-        font-size: 2.5rem;
-        color: $color-pink;
+        font-size: 2rem;
+        color: $color-black;
         padding: $sp0;
 
     }
 
     a>i:hover {
-        color: #ff0b54a6;
+        color: $color-grey;
     }
 
-    .pink {
-        color: #ff0b55b4;
-    }
 }
 
 main {
     width: 100%;
-    margin-top: $sp2;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,9 +84,10 @@ main {
         font-size: 1.5rem;
         font-weight: 300;
         margin: 0 0 0 1.8rem;
+        padding-left: 1rem;
 
         @media screen and (max-width:680px) {
-            padding-bottom: 1rem;
+            padding: 0 0 .2rem .8rem;
         }
 
     }
@@ -98,11 +95,12 @@ main {
     .main__image {
         position: relative;
         top: -2.3rem;
-        right: -11.7rem;
+        right: -12.7rem;
         width: 20%;
 
         @media screen and (max-width:680px) {
-            width: 30%;
+            width: 20%;
+            right: -12.5rem;
         }
     }
 
