@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Table for Database with Modal</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/512bb80baa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/style.css">
+
+
+</head>
+
+<body>
+
+    <div class="github" title="Ir al repositorio">
+        <a href="https://github.com/IrisMazzuca/Ada-It/tree/master/22-Data-Table">
+            <i class="fab fa-github"></i></a>
+    </div>
+
+    <div class="container">
+
+        <!-- primer tabla -->
+        <header class="header">
+            <h2 class="header__title">Ventas</h2>
+            <button class="btn" id="btnModal"><i class="fas fa-plus-circle"></i> Nueva venta</button>
+        </header>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Fecha</th>
+                    <th scope="col">Vendedora</th>
+                    <th scope="col">Sucursal</th>
+                    <th scope="col">Componentes</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody id="tableSales">
+            </tbody>
+        </table>
+
+        <!-- segunda tabla -->
+        <header class="header">
+            <h2 class="header__title">Ventas por sucursal</h2>
+        </header>
+
+        <table class="table">
+            <thead>
+                <tr class="table__head--flex">
+                    <th scope="col">Sucursal</th>
+                    <th class="table__head__title" scope="col">Total Ventas</th>
+                </tr>
+            </thead>
+            <tbody id="tableSalesByBranch">
+            </tbody>
+        </table>
+
+        <div class="footer__info">
+            <p>Producto estrella: <span class="bold" id="best-product"></span></p>
+            <p>Vendedora que más ingresos generó: <span class="bold" id="best-seller"></span></p>
+        </div>
+
+        <!-- modal -->
+        <div id="modal" class="modalContainer fade">
+            <div class="modal-content" id="modalContent">
+
+                <span id="close" class="close">×</span>
+                <h2>Nueva Venta</h2>
+                <p class="modal__subtitle">
+                    Vendedora:
+                </p>
+                <select class="select" name="rte" id="vendedora--select">
+                </select>
+                <p class="modal__subtitle">
+                    Componentes:
+                </p>
+                <select name="rte" id="componente--select" multiple>
+                </select>
+                <p class="modal__subtitle">
+                    Sucursal:
+                </p>
+                <select class="select" name="rte" id="sucursal--select">
+                </select>
+
+                <div class="flex">
+                    <button class="btnConfirm" id="btnConfirm">Aceptar</button>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <!-- <script src="sweetalert2.all.min.js"></script> -->
+    <!-- Optional: include a polyfill for ES6 Promises for IE11 -->
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+
+
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

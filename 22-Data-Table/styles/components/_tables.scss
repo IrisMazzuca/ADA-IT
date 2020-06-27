@@ -1,0 +1,32 @@
+th {
+    font-weight: $bw;
+    font-size: 1rem;
+}
+
+tr:hover {
+    background-color: $light-grey;
+}
+
+.table {
+    width: 100%;
+    background-color: $white;
+
+
+    &__head--flex {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-right: 15rem;
+
+    }
+
+    &__head__title {
+        margin-right: -7rem;
+
+    }
+}
+
+.bin-icon:hover {
+    cursor: pointer;
+    color: $red;
+}

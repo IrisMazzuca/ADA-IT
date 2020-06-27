@@ -1,0 +1,44 @@
+.btn {
+    padding: .3rem .5rem;
+    margin: auto 1rem .5rem auto;
+    color: $white;
+    background-color: $blue;
+    outline: none;
+    border: none;
+
+    &:hover {
+        color: $white;
+        box-shadow: inset 340px 0 0 0 $very-dark-cyan;
+        -webkit-transition: all ease 1.5s;
+        -moz-transition: all ease 1.5s;
+        transition: all ease 1.5s;
+    }
+
+}
+
+
+.btnConfirm {
+    width: 20%;
+    padding: .6rem 1rem;
+    margin-top: 1rem;
+    border: none;
+    outline: none;
+    background-color: $blue;
+    color: $white;
+    font-weight: $bw;
+    text-transform: uppercase;
+
+    &:hover {
+        color: $white;
+        box-shadow: inset 340px 0 0 0 $very-dark-cyan;
+        -webkit-transition: all ease 1s;
+        -moz-transition: all ease 1s;
+        transition: all ease 1s;
+    }
+
+    &:active,
+    &:focus {
+        border: none;
+        outline: none;
+    }
+}
