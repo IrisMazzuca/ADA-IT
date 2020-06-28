@@ -55,7 +55,7 @@ const newSalePush = (input) => {
     ventas.push(input);
 
     tableSalesGenerator();
-    tableSalesByBranch();
+    tableSalesByBranchGenerator();
     bestProductName();
     bestSellerName();
 };
@@ -191,7 +191,7 @@ const deleteSale = (id) => {
             });
 
             tableSalesGenerator();
-            tableSalesByBranch();
+            tableSalesByBranchGenerator();
             bestProductName();
             bestSellerName();
 
