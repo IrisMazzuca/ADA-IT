@@ -94,6 +94,10 @@ button:hover {
     padding: 1rem;
 }
 
+.casilla:hover{
+    cursor: pointer;
+}
+
 .github {
     width: 3rem;
     height: 4rem;
