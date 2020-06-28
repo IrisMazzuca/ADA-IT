@@ -12,12 +12,10 @@ body {
   width: 100%;
   overflow-x: hidden;
   color: rgba(0, 0, 0, 0.6);
-  background: #EFEFBB;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #D4D3DD, #EFEFBB);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #D4D3DD, #EFEFBB);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(-50deg, #fafafa 0%, #fcf8d4 25%, #eedfb5 50%, #f0c1d3 75%, #d8a2c4 100%);
+  background-size: 300% 300%;
+  position: relative;
+  animation: animate 7.5s ease-in-out infinite;
 }
 
 header {
@@ -89,17 +87,13 @@ main .main__course {
 }
 
 .card__figure {
+  width: 330px;
+  height: 280px;
   margin: 0.8rem;
   padding: 1rem;
   background-color: whitesmoke;
   box-shadow: 1px 1px 3px #adadad;
   border-radius: 1.5rem;
-  overflow: hidden;
-}
-
-.card__figure:hover {
-  box-shadow: 1px 1px 10px #5f5b5b98;
-  transform: scale(1.05);
   overflow: hidden;
 }
 
@@ -118,6 +112,59 @@ main .main__course {
   font-weight: 500;
   font-size: 0.9rem;
   color: #212130;
+}
+
+.container {
+  position: relative;
+  width: 33%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 2s ease;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 1.5rem;
+  width: 93%;
+  height: 92%;
+  margin: 0.8rem 0 0 0.8rem;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+  transition: 1s ease;
+}
+
+.text {
+  color: white;
+  background-color: black;
+  padding: 1rem;
+  font-size: 0.9rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
