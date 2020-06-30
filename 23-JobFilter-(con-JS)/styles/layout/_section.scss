@@ -1,0 +1,49 @@
+.section__flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.section__filter {
+    width: 89%;
+    background: #fff;
+    border-radius: 10px;
+    position: absolute;
+    top: 6rem;
+
+
+    &__btn {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        position: absolute;
+        right: 1rem;
+        top: 1.5rem;
+        color: $label-color;
+
+        &:hover {
+            color: $primary-color;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+
+}
+
+.fade {
+    opacity: 0;
+}
+
+.section__tag {
+
+    display: inline-block;
+    padding: $sp2 $sp3;
+    margin: $sp2 $sp1;
+    background-color: $background-color;
+    font-weight: $font-weight-bold;
+    font-size: $font-size;
+    color: $primary-color;
+    border-radius: 5px;
+}
