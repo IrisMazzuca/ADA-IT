@@ -10,7 +10,8 @@ Front-end dev projects at Ada-It
 - HTML5
 - CSS3
 - SASS
-- JavaScript (DOM)
+- JavaScript
+- DOM
 - React
 - Responsive Design
 - Mobile First
