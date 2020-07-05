@@ -81,7 +81,7 @@ main {
         margin: 0 0 0 1.8rem;
         padding-left: 1rem;
 
-        @media screen and (max-width:680px) {
+        @media screen and (max-width:720px) {
             padding: 0 0 .2rem .8rem;
         }
 
@@ -93,7 +93,7 @@ main {
         right: -12.7rem;
         width: 20%;
 
-        @media screen and (max-width:680px) {
+        @media screen and (max-width:720px) {
             width: 20%;
             right: -12.5rem;
         }
@@ -109,7 +109,7 @@ main {
 }
 
 .card {
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -125,16 +125,10 @@ main {
     box-shadow: 1px 1px 3px rgb(173, 173, 173);
     border-radius: $sp3;
     overflow: hidden;
-
 }
 
 .image {
     width: 300px;
-    z-index: 0;
-
-    @media screen and (max-width:680px) {
-        width: 200px;
-    }
 }
 
 .bold {
@@ -146,7 +140,9 @@ main {
 
 .container {
     position: relative;
-    width: 33%;
+    width: 330px;
+    height: 280px;
+    margin: $sp1;
 }
 
 .overlay {
@@ -161,15 +157,13 @@ main {
     transition: 2s ease;
     background-color: $color-black;
     border-radius: $sp3;
-    width: 330px;
-    height: 280px;
     margin: $sp1 0 0 $sp1;
 
 }
 
 .container:hover .overlay {
     opacity: 1;
-    transition: 1s ease;
+    transition: .5s all;
 }
 
 .text {

@@ -53,7 +53,7 @@ main .main__subtitle {
   margin: 0 0 0 1.8rem;
   padding-left: 1rem;
 }
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 720px) {
   main .main__subtitle {
     padding: 0 0 0.2rem 0.8rem;
   }
@@ -64,7 +64,7 @@ main .main__image {
   right: -12.7rem;
   width: 20%;
 }
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 720px) {
   main .main__image {
     width: 20%;
     right: -12.5rem;
@@ -79,7 +79,7 @@ main .main__course {
 }
 
 .card {
-  width: 80%;
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -99,12 +99,6 @@ main .main__course {
 
 .image {
   width: 300px;
-  z-index: 0;
-}
-@media screen and (max-width: 680px) {
-  .image {
-    width: 200px;
-  }
 }
 
 .bold {
@@ -116,7 +110,9 @@ main .main__course {
 
 .container {
   position: relative;
-  width: 33%;
+  width: 330px;
+  height: 280px;
+  margin: 0.8rem;
 }
 
 .overlay {
@@ -131,14 +127,12 @@ main .main__course {
   transition: 2s ease;
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 1.5rem;
-  width: 330px;
-  height: 280px;
   margin: 0.8rem 0 0 0.8rem;
 }
 
 .container:hover .overlay {
   opacity: 1;
-  transition: 1s ease;
+  transition: 0.5s all;
 }
 
 .text {
