@@ -33,19 +33,24 @@ const getCharacters = () => {
 
 
 // petición de los datos del contador de muertes utilizacon fetch
-let deaths;
-const getDeath = () => {
+let deathsCountByCharacter = {}
 
-    return fetch("https://breakingbadapi.com/api/deaths")
-        .then((response) => {
-            return response.json();
-        })
-        .then((data) => {
-            //console.log(data)
-            deaths = data;
+function getDeath(name) {
+    if (deathsCountByCharacter[name]) {
+        return deathsCountByCharacter[name]
+    }
+    return fetch(`https://breakingbadapi.com/api/death-count?name=${name}`)
+        .then(response => response.json())
+        .then(death => {
+            deathsCountByCharacter = death[0].deathCount
+            // console.log(deathsCountByCharacter, name)
 
+            return deathsCountByCharacter
+            // console.log("death", deaths)
+            // return deathsCountByCharacter.deathCount
         })
-};
+}
+
 
 
 // petición de las frases de los personajes utilizacon fetch
@@ -65,13 +70,12 @@ const getQuotes = () => {
 
 // función para crear el HTML con las tarjetas de todos los personajes:
 const cardContainer = document.getElementById("cardContainer");
-
+let deaths;
 const createCards = (characters) => {
     // como parámetro uso la información de getCharacters
-
     const cards = characters.reduce((htmlCards, character) => {
         return htmlCards + `
-        <div class="m-3 card " id="card${character.char_id}" style="width: 18rem;" onclick="changeTextBody(${character.char_id})">
+        <div class="m-3 card " id="card${character.char_id}" style="width: 18rem;" onclick="changeTextBody(${character.char_id},'${character.name}')">
             <div class="m-3 container-img">
                 <img src="${character.img}" class="card-img-top img grayscale" id="image${character.char_id}"  alt="${character.name}">
             </div>
@@ -85,7 +89,7 @@ const createCards = (characters) => {
             <div class="card-body d-none" id="hiddenCard${character.char_id}">
                 <h5 class="card-title">${character.name}</h5>
                 <p class="card-text"><strong>Quote: </strong> <em>"${getRandomQuote(character.name)}"</em></p>
-                <p class="card-text"><strong>Deaths: </strong>${character.nickname}</p>
+                <p id="deaths${character.char_id}" class="card-text"> Loading ... </p>
             </div>
         </div>`
     }, "");
@@ -100,7 +104,7 @@ const inputValue = document.getElementById("inputValue");
 // buscador del valor en la base de datos de characters, buscador por nombre:
 const searchValue = (value) => {
     const filter = characters.filter(character => {
-        return character.name.includes(value);
+        return character.name.toLowerCase().includes(value.toLowerCase());
     });
 
     createCards(filter);
@@ -127,15 +131,22 @@ clear.addEventListener("click", () => {
 
 
 // creación de la función para el onclick
-const changeTextBody = (id) => {
+
+const changeTextBody = (id, name) => {
+
     const hiddenCard = document.getElementById(`hiddenCard${id}`);
     const showCard = document.getElementById(`showCard${id}`);
     const image = document.getElementById(`image${id}`);
     const card = document.getElementById(`card${id}`);
+    const deaths = document.getElementById(`deaths${id}`);
+
     hiddenCard.classList.toggle("d-none");
     showCard.classList.toggle("d-none");
     image.classList.toggle("grayscale");
     card.classList.toggle("card-active");
+    getDeath(name).then(value => {
+        deaths.innerHTML = `<strong>Deaths:</strong> ${value}`;
+    });
 };
 
 
@@ -155,6 +166,7 @@ const getRandomQuote = (name) => {
 // llamo a las funciones:
 
 getQuotes()
-    .then(() => getDeath())
+    // .then(() => getDeath())
     .then(() => getCharacters());
+
 
