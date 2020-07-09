@@ -75,7 +75,7 @@ const createCards = (characters) => {
     // como parámetro uso la información de getCharacters
     const cards = characters.reduce((htmlCards, character) => {
         return htmlCards + `
-        <div class="m-3 card " id="card${character.char_id}" style="width: 18rem;" onclick="changeTextBody(${character.char_id},'${character.name}')">
+        <div class="m-3 card" id="card${character.char_id}" style="width: 18rem;" onclick="changeTextBody(${character.char_id},'${character.name}')">
             <div class="m-3 container-img">
                 <img src="${character.img}" class="card-img-top img grayscale" id="image${character.char_id}"  alt="${character.name}">
             </div>
