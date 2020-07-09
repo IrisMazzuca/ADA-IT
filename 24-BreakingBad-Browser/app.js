@@ -84,7 +84,7 @@ const createCards = (characters) => {
                 <p class="card-text"><strong>Birthday: </strong> ${character.birthday}</p>
                 <p class="card-text"><strong>Status: </strong> ${character.status}</p>
                 <p class="card-text"><strong>Nickname: </strong> ${character.nickname}</p>
-                <p class="card-text"><strong>Season: </strong> ${character.appearance}</p>
+                <p class="card-text"><strong>Seasons: </strong> ${character.appearance}</p>
             </div>
             <div class="card-body d-none" id="hiddenCard${character.char_id}">
                 <h5 class="card-title">${character.name}</h5>
@@ -145,7 +145,7 @@ const changeTextBody = (id, name) => {
     image.classList.toggle("grayscale");
     card.classList.toggle("card-active");
     getDeath(name).then(value => {
-        deaths.innerHTML = `<strong>Deaths:</strong> ${value}`;
+        deaths.innerHTML = `<strong>Kills:</strong> ${value}`;
     });
 };
 
