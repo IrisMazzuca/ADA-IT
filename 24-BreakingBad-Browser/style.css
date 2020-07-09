@@ -98,6 +98,7 @@ strong {
     }
 
     .input {
+        width: 300px;
         padding-right: 10rem;
     }
 
@@ -105,3 +106,4 @@ strong {
         width: 150px;
         height: 150px;
     }
+}
