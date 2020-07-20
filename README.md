@@ -12,6 +12,8 @@ Front-end dev projects at Ada-It
 - SASS
 - JavaScript
 - DOM
-- React
+- AJAX
+- React.js
+- Bootstrap
 - Responsive Design
 - Mobile First
