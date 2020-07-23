@@ -129,6 +129,7 @@ main {
 
 .image {
     width: 300px;
+    height: 220px;
 }
 
 .bold {
@@ -154,7 +155,7 @@ main {
     height: 100%;
     width: 100%;
     opacity: 0;
-    transition: 2s ease;
+    transition: 1s ease;
     background-color: $color-black;
     border-radius: $sp3;
     margin: $sp1 0 0 $sp1;

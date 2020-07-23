@@ -99,6 +99,7 @@ main .main__course {
 
 .image {
   width: 300px;
+  height: 220px;
 }
 
 .bold {
@@ -124,7 +125,7 @@ main .main__course {
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: 2s ease;
+  transition: 1s ease;
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 1.5rem;
   margin: 0.8rem 0 0 0.8rem;
