@@ -1,0 +1,36 @@
+.cardFront {
+    border-radius: $sp3;
+    background-size: cover;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+}
+
+.tag {
+    margin: $sp2;
+    padding: $sp0 $sp2;
+    color: $color-rose;
+    border-radius: $sp3;
+    font-size: $sp1;
+}
+
+.new-recipe {
+    background-color: $color-red;
+}
+
+.no-sugar {
+    background-color: $color-violet;
+}
+
+@media screen and (max-width: $sm) {
+
+    .tag {
+        font-size: $sp1;
+    }
+}

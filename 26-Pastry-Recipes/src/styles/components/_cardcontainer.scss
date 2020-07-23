@@ -1,0 +1,17 @@
+.cardContainer {
+    width: 800px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background: transparent;
+    margin: 0 auto;
+
+
+}
+
+@media screen and (max-width: $sm) {
+
+    .cardContainer {
+        width: 300px;
+    }
+}
