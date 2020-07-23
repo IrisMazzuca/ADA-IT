@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/Ada-It/26-Pastry-Recipes/static/css/main.447eca9d.chunk.css",
+    "main.js": "/Ada-It/26-Pastry-Recipes/static/js/main.c43d463c.chunk.js",
+    "main.js.map": "/Ada-It/26-Pastry-Recipes/static/js/main.c43d463c.chunk.js.map",
+    "runtime-main.js": "/Ada-It/26-Pastry-Recipes/static/js/runtime-main.47e299e5.js",
+    "runtime-main.js.map": "/Ada-It/26-Pastry-Recipes/static/js/runtime-main.47e299e5.js.map",
+    "static/js/2.6ef2e2d7.chunk.js": "/Ada-It/26-Pastry-Recipes/static/js/2.6ef2e2d7.chunk.js",
+    "static/js/2.6ef2e2d7.chunk.js.map": "/Ada-It/26-Pastry-Recipes/static/js/2.6ef2e2d7.chunk.js.map",
+    "index.html": "/Ada-It/26-Pastry-Recipes/index.html",
+    "precache-manifest.78ecbd4aea38e5e77b5b87a9e58aa7f4.js": "/Ada-It/26-Pastry-Recipes/precache-manifest.78ecbd4aea38e5e77b5b87a9e58aa7f4.js",
+    "service-worker.js": "/Ada-It/26-Pastry-Recipes/service-worker.js",
+    "static/css/main.447eca9d.chunk.css.map": "/Ada-It/26-Pastry-Recipes/static/css/main.447eca9d.chunk.css.map",
+    "static/js/2.6ef2e2d7.chunk.js.LICENSE.txt": "/Ada-It/26-Pastry-Recipes/static/js/2.6ef2e2d7.chunk.js.LICENSE.txt",
+    "static/media/01.jpg": "/Ada-It/26-Pastry-Recipes/static/media/01.8af3ced1.jpg",
+    "static/media/02.jpg": "/Ada-It/26-Pastry-Recipes/static/media/02.4d39d9d8.jpg",
+    "static/media/03.jpg": "/Ada-It/26-Pastry-Recipes/static/media/03.0f13be35.jpg",
+    "static/media/04.jpg": "/Ada-It/26-Pastry-Recipes/static/media/04.6527d1c1.jpg",
+    "static/media/05.jpg": "/Ada-It/26-Pastry-Recipes/static/media/05.383ca1f9.jpg",
+    "static/media/06.jpg": "/Ada-It/26-Pastry-Recipes/static/media/06.b32e16ac.jpg",
+    "static/media/07.jpg": "/Ada-It/26-Pastry-Recipes/static/media/07.12325b19.jpg",
+    "static/media/08.jpg": "/Ada-It/26-Pastry-Recipes/static/media/08.d22712c7.jpg",
+    "static/media/09.jpg": "/Ada-It/26-Pastry-Recipes/static/media/09.bd78f897.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.47e299e5.js",
+    "static/js/2.6ef2e2d7.chunk.js",
+    "static/css/main.447eca9d.chunk.css",
+    "static/js/main.c43d463c.chunk.js"
+  ]
+}
