@@ -1,0 +1,36 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.link {
+    color: rgb(220, 221, 222);
+    margin: 0 1.5rem;
+}
+
+.svg {
+    width: 1.8rem;
+    display: inline-block;
+}
+
+.svgmovie {
+    width: 2rem;
+    padding-top: .2rem;
+    display: inline-block;
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        justify-content: space-around;
+        text-align: center;
+        z-index: 99;
+        background: black;
+        padding: 5px 0px;
+    }
+}
